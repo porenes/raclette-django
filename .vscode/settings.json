@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder:raclettedjango}/db.sqlite3",
+            "driver": "SQLite",
+            "name": "raclettedjango",
+            "previewLimit": 50
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
