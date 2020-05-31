@@ -35,12 +35,6 @@ class DetailView(generic.DetailView):
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
-    
-    def get_queryset(self):
-        """
-        Excludes questions without choices
-        """
-        return Question.objects.prefetch_related(Prefetch('choice_set')).all()
 
 
 def vote(request, question_id):
